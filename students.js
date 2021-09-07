@@ -32,7 +32,6 @@ function loadJSON() {
 
 /* function prepareStudents(jsonData) {
   jsonData.forEach((jsonObject) => {
-    // TODO: Create new object with cleaned data - and store that in the allAnimals array
     const student = Object.create(Student);
 
     const fullName = jsonObject.fullname.trim();
@@ -52,7 +51,7 @@ function loadJSON() {
     //now the house
     const house = jsonObject.house.trim();
 
-    //meking house cap
+    //making house cap
     const houseCap = house.substring(0, 1).toUpperCase() + house.substring(1).toLowerCase();
 
     student.firstName = firstNameCap;
@@ -69,9 +68,6 @@ function loadJSON() {
 //SECOND VERSION
 
 function prepareStudents(jsonData) {
-  //this functions loops through each object in the json document
-  //it makes a copy of the Student object
-  //and fills it by calling other functions that translates and cleans the data into the categories we need
   jsonData.forEach((jsonObject) => {
     // console.log("prepareStudents: ");
     // console.log(jsonObject);
